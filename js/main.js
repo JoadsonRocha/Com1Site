@@ -33,7 +33,7 @@ function initNavbar() {
     mobileToggle.addEventListener('click', () => {
       navLinks.classList.toggle('active');
       const isOpen = navLinks.classList.contains('active');
-      mobileToggle.innerHTML = isOpen 
+      mobileToggle.innerHTML = isOpen
         ? `<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>`
         : `<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path></svg>`;
     });
@@ -141,7 +141,7 @@ function initSimulator() {
       if (selectedAddons.length === 0) {
         summaryAddonsList.innerHTML = '<span class="text-dim">Nenhum adicional selecionado</span>';
       } else {
-        summaryAddonsList.innerHTML = selectedAddons.map(ad => 
+        summaryAddonsList.innerHTML = selectedAddons.map(ad =>
           `<div class="summary-item-row"><span>+ ${ad.name}</span><strong>R$ ${ad.price.toLocaleString('pt-BR')}</strong></div>`
         ).join('');
       }
@@ -156,7 +156,7 @@ function initSimulator() {
 
     // Build WhatsApp conversion message
     if (simWhatsappBtn) {
-      const addonsText = selectedAddons.length > 0 
+      const addonsText = selectedAddons.length > 0
         ? selectedAddons.map(a => `• ${a.name} (R$ ${a.price})`).join('%0A')
         : 'Nenhum';
 
