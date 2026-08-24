@@ -1,0 +1,49 @@
+:root {
+  /* Cores Principais */
+  --bg-dark: #070913;
+  --bg-card: rgba(16, 20, 38, 0.75);
+  --bg-card-hover: rgba(24, 30, 58, 0.85);
+  --bg-glass: rgba(255, 255, 255, 0.03);
+  --border-glass: rgba(255, 255, 255, 0.08);
+  --border-glow: rgba(0, 210, 255, 0.35);
+
+  /* Acentos e Gradientes */
+  --primary: #00d2ff;
+  --primary-rgb: 0, 210, 255;
+  --secondary: #9d4edd;
+  --secondary-rgb: 157, 78, 221;
+  --accent-emerald: #10b981;
+  --accent-amber: #f59e0b;
+
+  --grad-primary: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 50%, #9d4edd 100%);
+  --grad-glow: linear-gradient(90deg, rgba(0, 210, 255, 0.2), rgba(157, 78, 221, 0.2));
+  --grad-card: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+  --grad-dark-mesh: radial-gradient(at 10% 20%, rgba(0, 210, 255, 0.12) 0px, transparent 50%),
+                    radial-gradient(at 90% 80%, rgba(157, 78, 221, 0.12) 0px, transparent 50%),
+                    radial-gradient(at 50% 50%, rgba(16, 20, 38, 0.8) 0px, transparent 80%);
+
+  /* Tipografia & Textos */
+  --text-main: #f3f4f6;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Efeitos e Sombras */
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 25px rgba(0, 210, 255, 0.35);
+  --shadow-glow-purple: 0 0 25px rgba(157, 78, 221, 0.35);
+
+  /* Transições e Espaçamentos */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+  
+  /* Containers */
+  --container-max: 1240px;
+}
