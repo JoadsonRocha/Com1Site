@@ -1,8 +1,9 @@
 :root {
-  /* Cores Principais */
+  /* Cores Principais - Dark Mode (Default) */
   --bg-dark: #070913;
   --bg-card: rgba(16, 20, 38, 0.75);
   --bg-card-hover: rgba(24, 30, 58, 0.85);
+  --bg-card-solid: #0d1226;
   --bg-glass: rgba(255, 255, 255, 0.03);
   --border-glass: rgba(255, 255, 255, 0.08);
   --border-glow: rgba(0, 210, 255, 0.35);
@@ -46,4 +47,37 @@
   
   /* Containers */
   --container-max: 1240px;
+}
+
+/* ==========================================================================
+   LIGHT MODE TOKENS
+   ========================================================================== */
+[data-theme="light"] {
+  --bg-dark: #f8fafc;
+  --bg-card: rgba(255, 255, 255, 0.85);
+  --bg-card-hover: rgba(255, 255, 255, 0.98);
+  --bg-card-solid: #ffffff;
+  --bg-glass: rgba(0, 0, 0, 0.02);
+  --border-glass: rgba(0, 0, 0, 0.08);
+  --border-glow: rgba(0, 150, 255, 0.35);
+
+  --primary: #0077cc;
+  --primary-rgb: 0, 119, 204;
+  --secondary: #7b2cbf;
+  --secondary-rgb: 123, 44, 191;
+
+  --grad-primary: linear-gradient(135deg, #0077cc 0%, #3a7bd5 50%, #7b2cbf 100%);
+  --grad-glow: linear-gradient(90deg, rgba(0, 119, 204, 0.1), rgba(123, 44, 191, 0.1));
+  --grad-card: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(245, 247, 250, 0.9) 100%);
+  --grad-dark-mesh: radial-gradient(at 10% 20%, rgba(0, 119, 204, 0.08) 0px, transparent 50%),
+                    radial-gradient(at 90% 80%, rgba(123, 44, 191, 0.08) 0px, transparent 50%),
+                    radial-gradient(at 50% 50%, rgba(240, 244, 248, 0.6) 0px, transparent 80%);
+
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --text-dim: #94a3b8;
+
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+  --shadow-glow: 0 10px 25px rgba(0, 119, 204, 0.15);
 }

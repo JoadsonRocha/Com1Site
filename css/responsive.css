@@ -10,8 +10,8 @@
   
   .contact-box {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
-    padding: 2.5rem;
+    gap: 2rem;
+    padding: 2rem;
   }
 
   .footer-top {
@@ -26,7 +26,7 @@
     top: 70px;
     left: 0;
     right: 0;
-    background: rgba(7, 9, 19, 0.98);
+    background: var(--bg-card-solid);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border-glass);
     flex-direction: column;
@@ -90,6 +90,31 @@
     right: 1.25rem;
     width: 52px;
     height: 52px;
+  }
+
+  .comparison-wrapper {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-box {
+    padding: 1.5rem;
+  }
+
+  .portal-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-toast {
+    left: 1rem;
+    right: 1rem;
+    max-width: none;
+    bottom: 5.5rem;
   }
 }
 
