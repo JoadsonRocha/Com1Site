@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
   initLeadCaptureForm();
   initProposalModal();
+  initWhatsAppBubble();
 });
 
 /* ==========================================================================
@@ -764,5 +765,30 @@ function initProposalModal() {
       formContainer.style.display = 'none';
       previewContainer.style.display = 'block';
     });
+  }
+}
+
+/* ==========================================================================
+   WHATSAPP CHAT BUBBLE (HUMANIZADO)
+   ========================================================================== */
+function initWhatsAppBubble() {
+  const bubble = document.getElementById('whatsapp-bubble');
+  const closeBtn = document.getElementById('close-bubble');
+  if (!bubble) return;
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      bubble.style.display = 'none';
+      sessionStorage.setItem('com1site_bubble_closed', 'true');
+    });
+  }
+
+  bubble.addEventListener('click', () => {
+    window.open('https://api.whatsapp.com/send?phone=5511999999999&text=Ol%C3%A1%2C%20gostaria%20de%20bater%20um%20papo%20sobre%20a%20cria%C3%A7%C3%A3o%20do%20meu%20site%20com%20a%20Com1Site!', '_blank');
+  });
+
+  if (sessionStorage.getItem('com1site_bubble_closed') === 'true') {
+    bubble.style.display = 'none';
   }
 }
